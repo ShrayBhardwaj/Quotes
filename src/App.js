@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import About from "./About";
+import Contact from './Contact';
+import Home from './Home';
+import Service from './Service';
+import Menu from './Menu';
+import Login from './components/Login'
+//import Admin from './components/Admin'
+import Logout from './components/Logout'
 
-function App() {
+
+import {Route, Switch} from 'react-router-dom';
+ 
+const App = () => {
+  
+   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Menu />  
+    <Switch>
+      
+     
+      <Route  exact path ="/Logout" component={Logout} />
+      <Route  exact path ="/Login" component={Login} />
+     
+      <Route   path ="/About" component={About} />      
+      <Route  path ="/Contact" component={Contact} />
+      <Route   path ="/Home" component={Home} />
+      <Route   path ="/Service" component={Service} />
+      
+    </Switch>
+
     </div>
   );
-}
+};
 
 export default App;
