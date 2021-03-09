@@ -8,6 +8,7 @@ import Menu from './Menu';
 import Login from './components/Login'
 //import Admin from './components/Admin'
 import Logout from './components/Logout'
+import Rootpage from './Rootpage'
 
 
 import {Route, Switch} from 'react-router-dom';
@@ -20,7 +21,7 @@ const App = () => {
      <Menu />  
     <Switch>
       
-     
+      <Route  exact path ="/" component={Rootpage} />     
       <Route  exact path ="/Logout" component={Logout} />
       <Route  exact path ="/Login" component={Login} />
      

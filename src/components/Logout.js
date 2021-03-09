@@ -10,10 +10,8 @@ export default class Logout extends Component {
     render() {
         return (
             <div>
-              <h1>
-                  logout
-                  </h1>
-                  <Link to="/Login">
+               <img className="logout" src="https://images-na.ssl-images-amazon.com/images/I/51lULJRQQsL._SL1000_.jpg"></img>
+                  <Link className="logoutlink" to="/Login">
                       Login again
                       </Link> 
             </div>

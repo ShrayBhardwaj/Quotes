@@ -1,0 +1,90 @@
+/*body{
+	background: #f7af07;
+	padding: 1em;
+	font: normal 15px Arial;
+	color: #333;
+}*/
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	display: flex;
+	margin: 0 auto;
+	width: 95%;
+    background-color: yellow;
+}
+.card h2{
+	margin: 0 0 0.5em 0;
+}
+.card img{
+	width: 100%;
+	height: auto;
+	margin: 0 0 1em 0;
+}
+.card p{
+	margin: 0 0 1em 0;
+}
+.card > a{
+	color: #f7af07;
+	text-decoration: none;
+	font-weight: bold;
+}
+.card{
+	margin: 0 1em;
+	background: #fafafa;
+	padding: 2em;
+	text-align: center;
+	position: relative;
+	transition: all 200ms;
+}
+.card:hover .flip{
+	transform: rotateX(0deg);
+}
+.flip{
+	background: #222;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	min-height: 100%;
+	transition: all 200ms;
+	padding: 2.5em 1.5em;
+	transform: rotateX(90deg);
+}
+.flip h2{
+	font-size: 1.3em;
+	color: #f7af07;
+	margin: 0 0 2.5em 0;
+}
+.flip ul,
+.flip li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.flip li{
+	margin: 0 0 2em 0;
+}
+.flip li a{
+	font-size: 1.3em;
+	color: #ccc;
+}
+
+@media (max-width: 600px) {
+	.container{
+		display: block;
+		width: 100%;
+	}
+	.container .card{
+		margin: 0 0 2em 0;
+	}
+}

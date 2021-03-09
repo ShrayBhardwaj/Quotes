@@ -1,3 +1,4 @@
+
 .img{
     width: 100%;
     height: auto;
@@ -60,3 +61,9 @@
       background-color:rgb(165, 154, 207);
       border-radius: 20px;
 }
+
+.logout_home:hover{
+    text-decoration: underline;
+    color: rgb(168, 212, 148);
+    text-decoration: none;
+    }

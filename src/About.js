@@ -25,7 +25,14 @@ export default class About extends Component {
 
         return (
             <div>
-                  <h1>hms</h1>
+                 <img className="aboutpage" src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80">
+
+                 </img>
+
+                 <h3 className="h3about">Site</h3>
+                 <p className="pabout">This site is used to increase your knowledge and this quotes is gonna change your life
+                 <br /> This quotes is help to put out your depression and Depression is unfocused self-pity. </p>
+                
             </div>
         )
     }
